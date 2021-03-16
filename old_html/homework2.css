@@ -1,0 +1,71 @@
+body {
+  background-color: yellow;
+}
+
+body a:link {
+  color: red;
+}
+
+body a:visited {
+  color: blue;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+}
+
+h2 {
+  color: blue;
+  font-style: italic;
+  text-align: right;
+}
+
+h2.end {
+  font-size: 3em;
+}
+
+h3 {
+  color: red;
+  text-align: right;
+}
+
+p::first-letter {
+  font-size: 3em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+span {
+  color: red;
+}
+
+table {
+  background-color: green;
+  padding: 5px;
+  border-spacing: 10px;
+  animation: table 5s;
+  animation-iteration-count: 1;
+}
+
+td {
+  text-align: center;
+  padding: 5px;
+  color: white;
+  animation: cell 5s;
+  animation-iteration-count: 1;
+}
+
+td.second {
+  text-align: left;
+}
+
+@keyframes table {
+  from {background-color: cyan}
+  to {background-color: green}
+}
+
+@keyframes cell {
+  from {color: black}
+  to {color: white}
+}
