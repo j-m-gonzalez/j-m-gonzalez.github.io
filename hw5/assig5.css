@@ -1,0 +1,81 @@
+body {
+  background-color: #CCFFFF;
+}
+
+#wrapper {
+  width: 85%;
+  min-width:760px;
+  margin:0 auto;
+  border:2px solid blue;
+  background-color:#FFF;
+  padding:10px 5px 0;
+}
+
+h1 {
+  text-align:center;
+  color:#330066;
+}
+
+h2 {
+  text-align:center;
+  color:blue;
+}
+
+h3 {
+  text-align:center;
+  letter-spacing:5px;
+}
+
+#main p::first-letter {
+  font-size: 250%;
+  color: #990000;
+  font-weight: bold;
+}
+
+img {
+  margin-right:20px;
+  float: left;
+}
+
+footer {
+  clear:both;
+  background-color: #990000;
+  text-align:center;
+  font-size:80%;
+  font-weight:bold;
+  color:white;
+  padding: 18px;
+}
+
+footer a {
+  color: #3366ff;
+}
+
+.nav {
+  text-align: center;
+}
+
+#nav ul li {
+  list-style-type: none;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #990000;
+  border-radius: 12px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+ul { /* without this there's 40px of padding
+     on the left. don't know why */
+  padding-left: 0px;
+}
+
+
+
+
+#nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold; }
