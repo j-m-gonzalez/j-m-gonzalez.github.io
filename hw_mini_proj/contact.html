@@ -2,10 +2,10 @@
 <!-- Jonathan Gonzalez 2/22/21 -->
 <html lang="en">
   <head>
-  <title>Mini Project Assignments</title>
+  <title>Contact</title>
   <link rel="shortcut icon" type="image/jpg" href="../images/favicon-16x16.png"/>
   <meta charset="utf-8">
-  <meta name="description" content="CNIT 132 Mini Project Assignments">
+  <meta name="description" content="CNIT 132 Mini Project Contact Page">
   <style>
   .grid-container {
     display: grid;
@@ -17,7 +17,6 @@
   }
   .content {
     background-color: #c6ffff;
-    margin: 0 0 5px 0;
   }
   .header {
     text-align: center;
@@ -53,24 +52,19 @@
   }
   p {
     margin-left: 10px;
-    width: 95%;
+    width: 100%;
     clear: both;
+    text-align: center;
   }
   li {
     width: 90%;
-  }
-  a {
-    display: block;
-  }
-  .content > a {
-    margin-left: 5px;
   }
   a:link {
     color: #002bed;
   }
 
   a:visited {
-  color: #cc3399;
+  color: #cc3399
 }
   </style>
   </head>
@@ -88,16 +82,17 @@
         </ul>
       </div>
       <div class="content">
-        <section>
-          <h1>CNIT Assignments</h1>
-        </section>
-        <div class="content">
-          <a href="homework1.html">Jonathan Gonzalez Profile</a>
-          <a href="../hw_4/hw_4.html">Working With Images</a>
-          <a href="../old_html/homework2.html">Very old HTML</a>
-          <a href="../hw5/assig5.html">Psuedo and Position</a>
-          <a href="../meetup_hw/meetup_hw.html">MeetUp: Django Tutorial</a>
+        <p>
+          Feel free to contact me through this form or through the links and information at the bottom of this page.
+        </p>
+        <div>
+          <form action="#" method="get">
+            <label for="fullname">Full Name: <input type="text" placeholder="Full Name" required name="fullname" id="fullname" size="50" maxlength="25"><br><br>
+            <label for="email">Email: <input type="email" placeholder="Email" required name="email" id="email" size="50" maxlength="30"><br><br>
+            <label for="comments">Comments: <textarea cols="30" rows="3" placeholder="Type your comments"></textarea><br>
+            <input type="submit" value="Submit Info">
         </div>
+      </div>
       <div class="footer">
         Copyright &copy; 2021 Jonathan Gonzalez <br>
         <a href="mailto:jgonz248@mail.ccsf.edu">jgonz248@mail.ccsf.edu</a>

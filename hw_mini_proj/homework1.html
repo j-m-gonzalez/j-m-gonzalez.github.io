@@ -3,9 +3,35 @@
 <html lang="en">
   <head>
   <title>Mini Project</title>
+  <link rel="shortcut icon" type="image/jpg" href="../images/favicon-16x16.png"/>
   <meta charset="utf-8">
   <meta name="description" content="CNIT 132 Mini Project">
   <style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: 150px 800px;
+    justify-content: center;
+  }
+  .menu {
+    background-color: #cc99ff;
+  }
+  .content {
+    background-color: #c6ffff;
+  }
+  .header {
+    text-align: center;
+    background-color: #3399ff;
+    grid-column: 1 / 3;
+  }
+  .bullet-header {
+    margin: 8px 0 0 15px;
+  }
+  .footer {
+    text-align: center;
+    background-color: #99ff99;
+    grid-row: 3;
+    grid-column: 1 / 3;
+  }
   body {
     background-color: #d5ebe0;
   }
@@ -14,9 +40,9 @@
   }
   img {
     height: 150px;
-    float: left;
+    float: right;
     border: 5px solid #555;
-    margin: 0 0 0 70px;
+    margin: 0 0 10px 10px;
   }
   ul {
     float: left;
@@ -25,63 +51,75 @@
     margin-top: 40px;
   }
   p {
-    width: 60%;
+    margin-left: 10px;
+    width: 95%;
     clear: both;
   }
   li {
-    width: 70%;
+    width: 90%;
   }
   a:link {
     color: #002bed;
   }
 
   a:visited {
-  color: #d100d1;
+  color: #cc3399;
 }
   </style>
   </head>
   <body>
-    <h1>Jonathan Gonzalez-CNIT 132</h1>
-      <ul>
-        <li><a href="homework1.html">Home</a></li>
-        <li><a href="assignments.html">Assignments</a></li>
-        <li><a href="#MeetUp">MeetUp Report</a></li>
-        <li><a href="#Contact">Contact</a></li>
-      </ul>
-      <img src="profile_pic.jpg" alt="image of Jonathan Gonzalez">
-      <p style="margin-top: 190px;">Hi, I'm Jonathan. I'm from San Francisco and grew up right by Lake Merced.
-         I went to school in the city then lived in Santa Cruz, San Anselmo and Alameda
-         for a few years at a time but I always came back to San Francisco.
-         I've worked as a computer draftsman, a social worker and at a bakery.
-         For now I'm learning more about computers and hope these skills can
-         eventually provide income.</p>
-      <p>My introduction to programming started with python. Seeing others get
-         jobs programming and seeing the growth of this field led me to be interested
-         in learning more. I started to see how programming is a useful tool in
-         so many fields from simple accounting to science to finance. I started
-         to enjoy learning more about computers and eventually fell into learning
-         the web framework Django. While fun, I found I could use some more education
-         in front end programming so I have been learning HTML and CSS for a while.
-         While initially it never led me to web development, I've been using
-         <a href="https://www.reddit.com/" target="_blank" rel="noopener noreferrer">Reddit</a>
-         for about 9 years. The vastness and depth of this site always had me finding
-         new interesting things. The random communities that pop up are entertaining,
-         sometimes emotional and usually informative. Once I learned some programming,
-         I noticed all of the little references reddit has to programming languages like
-         the use of "self" and collapsable comment trees.</p>
-         <p>The internet wasn't always as popular as it is today. For a time it existed at the
-            fringe of culture, only used by enthusiasts. Around the start of the new millennium
-            popularity of the world wide web rose sharply along with new technologies which made
-            this rise possible. The story of this rise is talked about more in depth in this article about
-            <a href="https://www.techopedia.com/2/31579/networks/a-brief-history-of-web-development#the-turn-of-the-century" target="_blank" rel="noopener noreferrer">Web development in the turn of the century</a>
-        <hr>
-        <h2>Good Links</h2>
-          <ul>
-            <li>One great resource for learning web technologies is <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">The web delelopment training site W3Schools.</a>
-                This site provides tutorials and examples of all of the most popular web technologies from Python to PHP to Javascript.</li>
-            <li><a href="https://stackoverflow.com/" target="_blank" rel="noopener noreferrer">The developer forum Stack Overflow</a> is essential to any developer.
-                just about any question about programming is answered and if it isn't, a community of experienced developers will provide and answer.
-            <li>At this point just about anyone will be familiar with the <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">the video hosting site YouTube</a>.
-                But users might not know that there are tons of helpful instructional videos on just about any topic, especially programming and web technologies.
-          </ul>
+    <div class="grid-container">
+      <div class="header">
+        <h1>Jonathan Gonzalez-CNIT 132</h1>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="homework1.html">Home</a></li>
+          <li><a href="assignments.html">Assignments</a></li>
+          <li><a href="../meetup_hw/meetup_hw.html">MeetUp Report</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <p><img src="profile_pic.jpg" alt="image of Jonathan Gonzalez">Hi, I'm Jonathan. I'm from San Francisco and grew up right by Lake Merced.
+           I went to school in the city then lived in Santa Cruz, San Anselmo and Alameda
+           for a few years at a time but I always came back to San Francisco.
+           I've worked as a computer draftsman, a social worker and at a bakery.
+           For now I'm learning more about computers and hope these skills can
+           eventually provide income.<br><br>
+           My introduction to programming started with python. Seeing others get
+           jobs programming and seeing the growth of this field led me to be interested
+           in learning more. I started to see how programming is a useful tool in
+           so many fields from simple accounting to science to finance. I started
+           to enjoy learning more about computers and eventually fell into learning
+           the web framework Django. While fun, I found I could use some more education
+           in front end programming so I have been learning HTML and CSS for a while.
+           While initially it never led me to web development, I've been using
+           <a href="https://www.reddit.com/" target="_blank" rel="noopener noreferrer">Reddit</a>
+           for about 9 years. The vastness and depth of this site always had me finding
+           new interesting things. The random communities that pop up are entertaining,
+           sometimes emotional and usually informative. Once I learned some programming,
+           I noticed all of the little references reddit has to programming languages like
+           the use of "self" and collapsable comment trees.</p>
+           <p>The internet wasn't always as popular as it is today. For a time it existed at the
+              fringe of culture, only used by enthusiasts. Around the start of the new millennium
+              popularity of the world wide web rose sharply along with new technologies which made
+              this rise possible. The story of this rise is talked about more in depth in this article about
+              <a href="https://www.techopedia.com/2/31579/networks/a-brief-history-of-web-development#the-turn-of-the-century" target="_blank" rel="noopener noreferrer">Web development in the turn of the century</a>
+          <hr>
+          <h2 class="bullet-header">Good Links</h2>
+            <ul>
+              <li>One great resource for learning web technologies is <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">The web delelopment training site W3Schools.</a>
+                  This site provides tutorials and examples of all of the most popular web technologies from Python to PHP to Javascript.</li>
+              <li><a href="https://stackoverflow.com/" target="_blank" rel="noopener noreferrer">The developer forum Stack Overflow</a> is essential to any developer.
+                  just about any question about programming is answered and if it isn't, a community of experienced developers will provide and answer.
+              <li>At this point just about anyone will be familiar with the <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">the video hosting site YouTube</a>.
+                  But users might not know that there are tons of helpful instructional videos on just about any topic, especially programming and web technologies.
+            </ul>
+      </div>
+      <div class="footer">
+        Copyright &copy; 2021 Jonathan Gonzalez <br>
+        <a href="mailto:jgonz248@mail.ccsf.edu">jgonz248@mail.ccsf.edu</a>
+      </div>
+    </div>
   </body>
